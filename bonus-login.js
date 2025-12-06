@@ -35,6 +35,7 @@ const user1 = {
 };
 
 class LoginManager_1234 {
+    // defensive program
     static validateInput_1234(username, password) {
         if (typeof username !== "string" || typeof password !== "string") {
             throw new ValidationError_1234("Username dan password harus berupa string");
@@ -85,10 +86,6 @@ class LoginManager_1234 {
         }
     }
 }
-
-// =======================
-// INTERFACE TERMINAL
-// =======================
 
 const rl = readline.createInterface({
     input: process.stdin,
